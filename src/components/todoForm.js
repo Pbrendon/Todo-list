@@ -2,6 +2,12 @@ import React {useState} from 'react'
 
 function todoForm() {
     const {input, setInput} = useState('')
+
+const handleSubmit = e=> {
+e.preventDefault();
+
+};
+    
   return (
    <form className="todo-form">
     <input 
