@@ -1,25 +1,31 @@
-import React {useState} from 'react'
+import React, {useState} from 'react';
+function TodoForm(props) {
+    const [input, setInput] = useState('');
 
-function todoForm() {
-    const {input, setInput} = useState('')
-
-const handleSubmit = e=> {
+const handleSubmit = e => {
 e.preventDefault();
+
+props.onSubmit({
+id: Math.floor(Math.random()*10000),
+text: input 
+});
 
 };
     
   return (
-   <form className="todo-form">
+   <form className="Todo-form" onSubmit={handleSubmit}>
     <input 
-    type="text"
-     placeholder='add a todo'
-     value={input} /
-   name='text' 
-   className='todo-input'/>
-  <button classNmae="todo-button">add todo</button>
+    type='text'
+     placeholder='Add a Todo'
+     value={input} 
+   name="text" 
+   className='todo-input'
+   />
+  <button className='Todo-button'>add 
+  todo</button>
    </form> 
     
-  )
+  );
 }
 
-export default todoForm
+export default TodoForm;
