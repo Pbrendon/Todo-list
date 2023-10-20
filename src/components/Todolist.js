@@ -3,9 +3,10 @@ import Todoform from './TodoForm'
 
 function Todolist() {
     const{Todos, setTodos} = useState ({})
-  return (
+  
+    return (
     <div>Todolist
-<h1>Whats's th Plan for Today </h1>
+<h1>Whats's the Plan for Today </h1>
 <TodoForm />
     </div>
   )

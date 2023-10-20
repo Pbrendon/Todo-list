@@ -29,7 +29,7 @@ setInput('');
    className='todo-input'
    onChange={handleChange}
    />
-  <button className='Todo-button'>add 
+  <button className='Todo-button'>Add 
   todo</button>
    </form> 
     );
