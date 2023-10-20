@@ -1,10 +1,12 @@
 import './App.css';
-import TodoForm from "./components/TodoForm";
+import react from 'react';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
     <div className='todo-app'>
-      <TodoForm />
+      <TodoList  />
+
     </div>
   );
 }

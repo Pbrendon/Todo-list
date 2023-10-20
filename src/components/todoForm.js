@@ -20,7 +20,7 @@ setInput('');
 };
     
   return (
-   <form className="Todo-form" onSubmit={handleSubmit}>
+   <form className="Todo-Form" onSubmit={handleSubmit}>
     <input 
     type='text'
      placeholder='Add a Todo'
